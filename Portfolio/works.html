@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>実績紹介 | 沓澤 優伸のポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="global-nav">
+                <a href="index.html">トップ</a>
+                <a href="works.html" class="active">実績</a>
+                <a href="about.html">私について</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="works" class="works-section">
+            <div class="container">
+                <h2>実績紹介</h2>
+                <div class="project-card">
+                    <h3>商品陳列アシスタント / Shinadashi Pro</h3>
+
+                    <img src="images/stocktool_main.png" alt="商品陳列アシスタントのスクリーンショット" class="screenshot">
+
+                    <div class="project-overview">
+                        <h4>概要</h4>
+                        <p>
+                            「あれ、どこだっけ？」「これ、何箱だっけ？」――。<br>
+                            そんなアルバイト先の「非効率」を根絶するために開発したのが、この『商品陳列アシスタント』です。<br>
+                            これまで個人の経験に頼りがちだった品出し業務を、誰もが迷わず、直感的に使えるWebアプリケーションへと昇華させました。新人でも即戦力として活躍できる環境を実現します。
+                        </p>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://yupinz123.github.io/ShinadashiPro" target="_blank" rel="noopener noreferrer" class="btn btn-primary">実際にツールを使ってみる</a>
+                    </div>
+
+                    <div class="project-details">
+                        <h4>課題・背景</h4>
+                        <p>
+                            アルバイト先の品出し業務では、商品の場所や補充数の確認に時間がかかる、手作業による単純なミスが多いといった課題が常態化していました。私自身も、本来であれば他のスタッフを手伝うべき時間をこの作業に費やさざるを得ず、店舗全体の非効率性を肌で感じていました。<br>
+                            この状況を解決するためツールを開発。導入後は、従来2時間以上かかっていた作業が1時間半に短縮・固定化され、業務量に左右されない安定したオペレーションを実現しました。
+                        </p>
+
+                        <h4>工夫した点・こだわった技術</h4>
+                        <ul>
+                            <li><strong>ユーザー中心の設計とフィードバックサイクル</strong><br>
+                                開発の初期段階から、実際にツールを使用するアルバイト先の同僚など、複数人にプロトタイプを試してもらいました。頂いたフィードバックを元に、誰にとっても直感的で分かりやすいUI/UXとなるよう、ボタンの配置や機能の分類などを繰り返し改善しました。</li>
+                            <li><strong>JavaScriptによるSPAライクな操作感</strong><br>
+                                フレームワークに頼らず、素のJavaScript（Vanilla JS）のみで画面遷移を制御しました。これにより、Webページでありながら、まるでスマートフォンアプリのようにスムーズでストレスのない操作感を実現しています。</li>
+                            <li><strong>直感的なUIを実現するインタラクション</strong><br>
+                                設定画面では`Sortable.js`を導入し、ドラッグ＆ドロップでカテゴリ等の順序を簡単に入れ替えられるようにしました。また、用途に応じて最適なUIを提供する「カウントモード」と「タスクモード」の切替機能を実装し、利用者の作業効率を最大化することを目指しました。</li>
+                            <li><strong>AIを活用した高速開発とプロトタイピング</strong><br>
+                                自身の強みである「効率化」を開発プロセス自体にも適用するため、AIコーディングツールを積極的に活用。これにより、アイデアの検証と実装のサイクルを高速化し、約12時間という短期間で高機能なプロトタイプの開発に成功しました。AIを生産性を最大化するための「パートナー」として活用するスキルを習得しました。</li>
+                        </ul>
+
+                        <h4>結果・学んだこと</h4>
+                        <p>
+                            この開発経験を通して最も大きな学びとなったのは、「最初に要件を明確に定義することが、開発の速度と質を大きく左右する」ということです。明確なゴールがあったからこそ、技術的な挑戦から、課題解決のための設計、ユーザーからのフィードバックを反映するプロセスまで、諦めずに最後までやり遂げることができました。この一つのプロジェクトを自分の力で形にできたことは、エンジニアを目指す上での大きな自信に繋がりました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section" style="padding-top: 0;">
+            <div class="container">
+                <h2>スキル</h2>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Tailwind CSS</li>
+                    <li>Sortable.js</li>
+                    <li>Git / GitHub</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yushin Kutsuzawa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
