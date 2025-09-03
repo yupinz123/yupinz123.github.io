@@ -1,3 +1,14 @@
+/* プロフィール画像を円形で表示 */
+.profile-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0,123,255,0.10);
+    margin-bottom: 24px;
+    background: #fff;
+    display: block;
+}
 /* ===== 基本設定とリセット ===== */
 :root {
     --primary-color: #3B82F6; /* 青色 */
