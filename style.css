@@ -401,3 +401,35 @@ section {
         padding: 1.5rem;
     }
 }
+
+/* ===== 私についてページ専用スタイル ===== */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 丸い形にする */
+    object-fit: cover; /* 画像が潰れないように調整 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h4 {
+    margin-top: 0; /* 画像の横に来る最初のh4の上の余白をなくす */
+}
+
+/* 768px以下の画面幅（スマホなど）では縦に並べる */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center; /* 中央揃えにする */
+    }
+}
